@@ -7,7 +7,14 @@ var dishSchema = new Schema({
     name: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
+        "name": "Uthapizza",
+        "image": "imges/uthapizza.png",
+        "category": "mains",
+        "label": "Hot",
+        "price": "4.99",
+        ""
+
     },
     description: {
         type: String,
