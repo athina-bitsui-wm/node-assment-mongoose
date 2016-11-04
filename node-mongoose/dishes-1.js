@@ -1,6 +1,7 @@
 //grab the thing that we need
 var mongoose = require('mongoose');
-var Schema = mongoose.schema;
+//all way have a uppercase S in Schema.
+var Schema = mongoose.Schema;
 
 //create a Schema
 var dishSchema = new Schema({
