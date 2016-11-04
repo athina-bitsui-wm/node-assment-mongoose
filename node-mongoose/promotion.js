@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-    assert = require('assert');
+assert = require('assert');
 
 var Dishes = require('./models/dishes-1');
 
@@ -14,7 +14,10 @@ db.once('open', function() {
     //create a new user
     var newDish = Dishes({
         name: 'Uthapizza',
-        description: 'Test'
+        image: "image/buffect.png",
+        label: "new",
+        price: "19.99",
+        description: 'Featuring...'
     });
     //save the user
     newDish.save(function(err){
@@ -27,9 +30,9 @@ db.once('open', function() {
 
             //object of all the users
             console.log(dishes);
-                    db.collection('dishes').drop(function () {
-                        db.close();
-                    });
+            db.collection('dishes').drop(function () {
+                db.close();
+            });
         });
     });
 });
